@@ -227,7 +227,7 @@ class BattleCity:
 
     def is_collision_with_cells(self, x, y):
         for cell in self.cells:
-            if cell.exists and cell.cell_type in {BRICK, STONE, WATER, SEMI_CRACKED_BRICK, CRACKED_BRICK, MIRROR_NE, MIRROR_SE}:
+            if cell.exists and cell.cell_type in {BRICK, STONE, WATER, SEMI_CRACKED_BRICK, CRACKED_BRICK, HOME, MIRROR_NE, MIRROR_SE}:
                 if (x < cell.x + 16 and
                     x + 16 > cell.x and
                     y < cell.y + 16 and
